@@ -1,0 +1,63 @@
+% start S
+
+S -> NP[NUM=?n] VP[NUM=?n] FSTOP
+S -> WHAT[GAP=?g] DO[TENSE=?t, NUM=?n] NP[NUM=?n] VP[GAP=?g, FORM=base] QMARK
+S -> DO[TENSE=?t, NUM=?n] NP[NUM=?n] VP[FORM=base] QMARK
+
+NP[NUM=?n, SEM=?t] -> N[NUM=?n, SEM=?t]
+NP[NUM=?n, SEM=?t] -> PropN[NUM=?n, SEM=?t]
+NP[NUM=?n, SEM=?t] -> Det[NUM=?n] N[NUM=?n, SEM=?t]
+NP[NUM=pl, SEM=?t] -> N[NUM=pl, SEM=?t]
+
+N[NUM=sg, SEM=object] -> 'summit' | 'book' | 'dog'
+N[NUM=sg, SEM=location] -> 'shelf'
+N[NUM=pl, SEM=object] -> 'dogs' | 'cats'
+N[NUM=pl, SEM=duration] -> 'minutes'
+PropN[NUM=sg, SEM=name] -> 'Alex' | 'Mel'
+PropN[NUM=sg, SEM=instant] -> 'Tuesday'
+
+VP[TENSE=?t, NUM=?n, FORM=?f] -> BE[TENSE=?t, NUM=?n, FORM=?f] ADJ
+VP[TENSE=?t, NUM=?n, FORM=?f] -> V[SUBCAT=intrans, TENSE=?t, NUM=?n, FORM=?f]
+VP[TENSE=?t, NUM=?n, FORM=?f] -> V[SUBCAT=trans, TENSE=?t, NUM=?n, FORM=?f, PP=none] NP
+VP[TENSE=?t, NUM=?n, FORM=?f] -> V[SUBCAT=trans, TENSE=?t, NUM=?n, FORM=?f, PP=?p] NP PP[SEM=?p]
+VP[TENSE=?t, NUM=?n, FORM=?f, GAP=?g] -> V[SUBCAT=trans, TENSE=?t, NUM=?n, FORM=?f, PP=?p] PP[SEM=?p]
+VP[TENSE=?t, NUM=?n, FORM=?f] -> V[SUBCAT=clause, TENSE=?t, NUM=?n, FORM=?f] CLAUSE
+VP[TENSE=?t, NUM=?n, FORM=?f, GAP=?g] -> V[SUBCAT=clause, TENSE=?t, NUM=?n, FORM=?f]
+VP[TENSE=?t, NUM=?n, FORM=?f, GAP=?g] -> V[SUBCAT=clause, TENSE=?t, NUM=?n, FORM=?f] CLAUSE[gap=?g]
+VP[TENSE=?t, NUM=?n, FORM=?f] -> VP[TENSE=?t, NUM=?n, FORM=?f] PP
+
+V[SUBCAT=clause, FORM=base, ARG=clause] -> 'think'
+V[SUBCAT=clause, TENSE=pres, NUM=pl] -> 'think'
+V[SUBCAT=clause, TENSE=past, ARG=clause] -> 'thought'
+V[SUBCAT=clause, FORM=base] -> 'know'
+V[SUBCAT=clause, TENSE=pres, NUM=pl] -> 'know'
+V[SUBCAT=clause, TENSE=pres, NUM=sg] -> 'knows'
+V[SUBCAT=trans, FORM=base, PP=location] -> 'put'
+V[SUBCAT=trans, TENSE=past, PP=location] -> 'put'
+V[SUBCAT=trans, TENSE=pres, NUM=pl, PP=location] -> 'put'
+V[SUBCAT=trans, TENSE=past, PP=instant] -> 'reached'
+V[SUBCAT=intrans, TENSE=past, PP=duration] -> 'walked'
+V[SUBCAT=intrans, TENSE=past, PP=instant] -> 'walked'
+V[SUBCAT=intrans, TENSE=pres, NUM=pl] -> 'bark'
+V[SUBCAT=intrans, TENSE=pres, NUM=sg] -> 'barks'
+
+CLAUSE[GAP=?g] -> 'that' NP[NUM=?n] VP[NUM=?n, GAP=?g]
+CLAUSE[GAP=?g] -> NP[NUM=?n] VP[NUM=?n, GAP=?g]
+
+DO[TENSE=past] -> 'did'
+DO[TENSE=pres, NUM=sg] -> 'does'
+
+PP[SEM=duration] -> 'for' NP[SEM=duration]
+PP[SEM=instant] -> 'on' NP[SEM=instant]
+PP[SEM=location] -> 'on' NP[SEM=location]
+
+PREP -> 'on' | 'for'
+BE[TENSE=past, NUM=sg] -> 'was'
+Det -> 'the'
+Det[NUM=pl] -> 'five'
+ADJ -> 'interesting'
+
+WHAT -> 'what'
+THAT -> 'that'
+QMARK -> '?'
+FSTOP -> '.'

@@ -1,0 +1,21 @@
+(S[] (NP[NUM='pl', SEM='object'] (Det[] the) (N[NUM='pl', SEM='object'] dogs)) (VP[FORM=?f, NUM='pl', TENSE='pres'] (V[NUM='pl', SUBCAT='intrans', TENSE='pres'] bark)) (FSTOP[] .))
+(S[] (NP[NUM='sg', SEM='object'] (Det[] the) (N[NUM='sg', SEM='object'] dog)) (VP[FORM=?f, NUM='sg', TENSE='pres'] (V[NUM='sg', SUBCAT='intrans', TENSE='pres'] barks)) (FSTOP[] .))
+
+
+
+(S[] (NP[NUM='pl', SEM='object'] (N[NUM='pl', SEM='object'] dogs)) (VP[FORM=?f, NUM='pl', TENSE='pres'] (V[NUM='pl', SUBCAT='intrans', TENSE='pres'] bark)) (FSTOP[] .))
+
+(S[] (NP[NUM='sg', SEM='name'] (PropN[NUM='sg', SEM='name'] Alex)) (VP[FORM=?f, GAP=?g, NUM=?n, TENSE='past'] (V[ARG='clause', SUBCAT='clause', TENSE='past'] thought) (CLAUSE[GAP=?g] that (NP[NUM='sg', SEM='object'] (Det[] the) (N[NUM='sg', SEM='object'] book)) (VP[FORM=?f, NUM='sg', TENSE='past'] (BE[NUM='sg', TENSE='past'] was) (ADJ[] interesting)))) (FSTOP[] .))
+
+
+(S[] (NP[NUM='sg', SEM='name'] (PropN[NUM='sg', SEM='name'] Mel)) (VP[FORM='base', NUM=?n, TENSE=?t] (V[FORM='base', PP='location', SUBCAT='trans'] put) (NP[NUM='sg', SEM='object'] (Det[] the) (N[NUM='sg', SEM='object'] book)) (PP[SEM='location'] on (NP[NUM='sg', SEM='location'] (Det[] the) (N[NUM='sg', SEM='location'] shelf)))) (FSTOP[] .))
+(S[] (DO[TENSE='past'] did) (NP[NUM='sg', SEM='name'] (PropN[NUM='sg', SEM='name'] Mel)) (VP[FORM='base', NUM=?n, TENSE=?t] (V[FORM='base', PP='location', SUBCAT='trans'] put) (NP[NUM='sg', SEM='object'] (Det[] the) (N[NUM='sg', SEM='object'] book)) (PP[SEM='location'] on (NP[NUM='sg', SEM='location'] (Det[] the) (N[NUM='sg', SEM='location'] shelf)))) (QMARK[] ?))
+
+(S[] (WHAT[] what) (DO[TENSE='past'] did) (NP[NUM='sg', SEM='name'] (PropN[NUM='sg', SEM='name'] Mel)) (VP[FORM='base', GAP=?g, NUM=?n, TENSE=?t] (V[FORM='base', PP='location', SUBCAT='trans'] put) (PP[SEM='location'] on (NP[NUM='sg', SEM='location'] (Det[] the) (N[NUM='sg', SEM='location'] shelf)))) (QMARK[] ?))
+
+(S[] (WHAT[] what) (DO[NUM='sg', TENSE='pres'] does) (NP[NUM='sg', SEM='name'] (PropN[NUM='sg', SEM='name'] Alex)) (VP[FORM=?f, GAP=?g, NUM='pl', TENSE='pres'] (V[NUM='pl', SUBCAT='clause', TENSE='pres'] know)) (QMARK[] ?))
+(S[] (WHAT[] what) (DO[NUM='sg', TENSE='pres'] does) (NP[NUM='sg', SEM='name'] (PropN[NUM='sg', SEM='name'] Mel)) (VP[FORM='base', GAP=?g, NUM=?n, TENSE=?t] (V[ARG='clause', FORM='base', SUBCAT='clause'] think) (CLAUSE[GAP=?g] (NP[NUM='sg', SEM='name'] (PropN[NUM='sg', SEM='name'] Alex)) (VP[FORM=?f, GAP=?g, NUM='sg', TENSE='pres'] (V[NUM='sg', SUBCAT='clause', TENSE='pres'] knows)))) (QMARK[] ?))
+(S[] (NP[NUM='sg', SEM='name'] (PropN[NUM='sg', SEM='name'] Alex)) (VP[FORM=?f, NUM=?n, TENSE='past'] (V[PP='instant', SUBCAT='trans', TENSE='past'] reached) (NP[NUM='sg', SEM='object'] (Det[] the) (N[NUM='sg', SEM='object'] summit)) (PP[SEM='instant'] on (NP[NUM='sg', SEM='instant'] (PropN[NUM='sg', SEM='instant'] Tuesday)))) (FSTOP[] .))
+
+(S[] (NP[NUM='sg', SEM='name'] (PropN[NUM='sg', SEM='name'] Alex)) (VP[FORM=?f, NUM=?n, TENSE='past'] (VP[FORM=?f, NUM=?n, TENSE='past'] (V[PP='instant', SUBCAT='intrans', TENSE='past'] walked)) (PP[SEM='instant'] on (NP[NUM='sg', SEM='instant'] (PropN[NUM='sg', SEM='instant'] Tuesday)))) (FSTOP[] .))
+(S[] (NP[NUM='sg', SEM='name'] (PropN[NUM='sg', SEM='name'] Mel)) (VP[FORM=?f, NUM=?n, TENSE='past'] (VP[FORM=?f, NUM=?n, TENSE='past'] (V[PP='instant', SUBCAT='intrans', TENSE='past'] walked)) (PP[SEM='duration'] for (NP[NUM='pl', SEM='duration'] (Det[NUM='pl'] five) (N[NUM='pl', SEM='duration'] minutes)))) (FSTOP[] .))
