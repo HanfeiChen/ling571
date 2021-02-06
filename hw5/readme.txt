@@ -1,4 +1,4 @@
-# LING571
+# LING571 HW5
 
 This is the most fun assignment in this class I have done so far. I started clueless about
 what to do, but it got easier as I tried to tackle the easiest sentences (about dogs barking)
