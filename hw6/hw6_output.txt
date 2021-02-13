@@ -1,0 +1,30 @@
+John eats
+exists e.(eating(e) & eater(e,John))
+a student eats
+exists x.(student(x) & exists e.(eating(e) & eater(e,x)))
+all students eat
+all x.(student(x) -> exists e.(eating(e) & eater(e,x)))
+John eats a sandwich
+exists x.(sandwich(x) & exists e.(eating(e) & eater(e,John) & eaten(e,x)))
+all students eat or drink
+all x.(student(x) -> (exists e.(eating(e) & eater(e,x)) | exists e.(drinking(e) & drinker(e,x))))
+John drinks a soda or eats a sandwich
+(exists z3.(soda(z3) & exists e.(drinking(e) & drinker(e,John) & drunk(e,z3))) | exists z2.(sandwich(z2) & exists e.(eating(e) & eater(e,John) & eaten(e,z2))))
+John or Mary eats
+(exists e.(eating(e) & eater(e,John)) | exists e.(eating(e) & eater(e,Mary)))
+a student writes an essay or eats
+exists x.(student(x) & (exists z5.(essay(z5) & exists e.(writing(e) & writer(e,x) & written(e,z5))) | exists e.(eating(e) & eater(e,x))))
+every student eats a sandwich or drinks a soda
+all x.(student(x) -> (exists z9.(sandwich(z9) & exists e.(eating(e) & eater(e,x) & eaten(e,z9))) | exists z8.(soda(z8) & exists e.(drinking(e) & drinker(e,x) & drunk(e,z8)))))
+John eats every sandwich
+all x.(sandwich(x) -> exists e.(eating(e) & eater(e,John) & eaten(e,x)))
+John eats every sandwich or bagel
+all x.((sandwich(x) | bagel(x)) -> exists e.(eating(e) & eater(e,John) & eaten(e,x)))
+nobody eats a bagel
+-exists x.(person(x) & exists z10.(bagel(z10) & exists e.(eating(e) & eater(e,x) & eaten(e,z10))))
+a person does not eat
+exists x.(person(x) & -exists e.(eating(e) & eater(e,x)))
+Jack does not eat or drink
+-(exists e.(eating(e) & eater(e,Jack)) | exists e.(drinking(e) & drinker(e,Jack)))
+no student eats a bagel
+-exists x.(student(x) & exists z11.(bagel(z11) & exists e.(eating(e) & eater(e,x) & eaten(e,z11))))

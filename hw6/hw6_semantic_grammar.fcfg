@@ -1,0 +1,52 @@
+% start S
+
+S[SEM=<?subj(?vp)>] -> NP[SEM=?subj,NUM=?num] VP[SEM=?vp,NUM=?num]
+
+VP[SEM=<?conj(?vp2)(?vp1)>,NUM=?num] -> VP[SEM=?vp1,NUM=?num] CONJ[SEM=?conj] VP[SEM=?vp2,NUM=?num]
+VP[SEM=<?not(?vp)>,NUM=?num] -> AUX[NUM=?num] NOT[SEM=?not] VP[SEM=?vp,NUM=pl]
+VP[SEM=?v,NUM=?num] -> IV[SEM=?v,NUM=?num]
+VP[SEM=<?v(?obj)>,NUM=?num] -> TV[SEM=?v,NUM=?num] NP[SEM=?obj]
+
+NP[SEM=<?conj(?np2)(?np1)>,NUM=?num] -> NP[SEM=?np1,NUM=?num1] CONJ[SEM=?conj] NP[SEM=?np2,NUM=?num2]
+NP[SEM=<?det(?n)>,NUM=?num] -> Det[SEM=?det,NUM=?num] N[SEM=?n,NUM=?num]
+NP[SEM=?n,NUM=?num] -> PropN[SEM=?n,NUM=?num]
+NP[SEM=?n,NUM=?num] -> PN[SEM=?n,NUM=?num]
+
+Det[SEM=<\Q P.exists x.(Q(x) & P(x))>,NUM=sg] -> 'a' | 'an'
+Det[SEM=<\Q P.all x.(Q(x) -> P(x))>,NUM=sg] -> 'every'
+Det[SEM=<\Q P.all x.(Q(x) -> P(x))>,NUM=pl] -> 'all'
+Det[SEM=<\Q P.-exists x.(Q(x) & P(x))>,NUM=sg] -> 'no'
+
+N[SEM=<?conj(?n2)(?n1)>,NUM=?num] -> N[SEM=?n1,NUM=?num1] CONJ[SEM=?conj] N[SEM=?n2,NUM=?num2]
+N[SEM=<\x.dog(x)>,NUM=sg] -> 'dog'
+N[SEM=<\x.bagel(x)>,NUM=sg] -> 'bagel'
+N[SEM=<\x.sandwich(x)>,NUM=sg] -> 'sandwich'
+N[SEM=<\x.soda(x)>,NUM=sg] -> 'soda'
+N[SEM=<\x.essay(x)>,NUM=sg] -> 'essay'
+N[SEM=<\x.student(x)>,NUM=sg] -> 'student'
+N[SEM=<\x.student(x)>,NUM=pl] -> 'students'
+N[SEM=<\x.person(x)>,NUM=sg] -> 'person'
+
+PropN[SEM=<\P.P(John)>,NUM=sg] -> 'John'
+PropN[SEM=<\P.P(Mary)>,NUM=sg] -> 'Mary'
+PropN[SEM=<\P.P(Jack)>,NUM=sg] -> 'Jack'
+
+PN[SEM=<\P.(-exists x.(person(x) & P(x)))>,NUM=sg] -> 'nobody'
+
+IV[SEM=<\x.exists e.(writing(e) & writer(e,x))>,NUM=sg] -> 'writes'
+IV[SEM=<\x.exists e.(writing(e) & writer(e,x))>,NUM=pl] -> 'write'
+IV[SEM=<\x.exists e.(eating(e) & eater(e,x))>,NUM=sg] -> 'eats'
+IV[SEM=<\x.exists e.(eating(e) & eater(e,x))>,NUM=pl] -> 'eat'
+IV[SEM=<\x.exists e.(drinking(e) & drinker(e,x))>,NUM=sg] -> 'drinks'
+IV[SEM=<\x.exists e.(drinking(e) & drinker(e,x))>,NUM=pl] -> 'drink'
+TV[SEM=<\X y.X(\x.exists e.(writing(e) & writer(e,y) & written(e,x)))>,NUM=sg] -> 'writes'
+TV[SEM=<\X y.X(\x.exists e.(writing(e) & writer(e,y) & written(e,x)))>,NUM=pl] -> 'write'
+TV[SEM=<\X y.X(\x.exists e.(eating(e) & eater(e,y) & eaten(e,x)))>,NUM=sg] -> 'eats'
+TV[SEM=<\X y.X(\x.exists e.(eating(e) & eater(e,y) & eaten(e,x)))>,NUM=pl] -> 'eat'
+TV[SEM=<\X y.X(\x.exists e.(drinking(e) & drinker(e,y) & drunk(e,x)))>,NUM=sg] -> 'drinks'
+TV[SEM=<\X y.X(\x.exists e.(drinking(e) & drinker(e,y) & drunk(e,x)))>,NUM=pl] -> 'drink'
+
+CONJ[SEM=<\Q P.\x.(P(x) | Q(x))>] -> 'or'
+
+AUX[NUM=sg] -> 'does'
+NOT[SEM=<\P.(\x.-P(x))>] -> 'not'
