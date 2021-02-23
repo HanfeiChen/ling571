@@ -1,0 +1,76 @@
+car: the:159 a:65 in:31 and:27 his:25 of:24 was:24 with:18 to:17 by:13
+automobile: the:25 of:14 and:8 in:7 to:5 an:5 state:5 racing:4 as:4 from:4
+car,automobile:0.7899820221518483
+journey: the:10 a:7 of:5 to:5 his:4 their:4 in:3 an:3 american:3 was:3
+voyage: the:10 a:3 this:3 was:3 of:2 as:2 fourth:2 second:2 third:2 i:2
+journey,voyage:0.6433599093157291
+boy: the:125 a:82 and:27 was:22 that:18 who:16 had:15 in:14 he:14 of:13
+lad: the:2 with:2 a:2 toneless:1 was:1 making:1 always:1 smiling:1 nearly:1 any:1
+boy,lad:0.5577833511724408
+coast: the:49 of:16 west:11 gulf:6 and:6 guard:5 to:5 in:5 east:5 from:4
+shore: the:45 saxon:12 and:10 to:6 on:6 by:6 a:5 of:5 as:5 occupied:5
+coast,shore:0.8594459431929244
+magician: a:3 and:2 had:1 turned:1 was:1 than:1 has:1 to:1 french:1 georges:1
+wizard: the:3 of:3 changes:1 who:1 fashioned:1 is:1 a:1 menlo:1
+magician,wizard:0.125
+midday: the:2 warmth:1 of:1 could:1 still:1 one:1 sunny:1 on:1 fifth:1 been:1
+noon: at:10 and:10 to:7 was:4 by:3 midnight:3 a:2 this:2 there:2 on:2
+midday,noon:0.2570193398539127
+furnace: the:8 a:5 in:3 and:2 your:2 fuel:2 filters:1 blower:1 do:1 buy:1
+stove: the:11 a:5 and:5 in:3 on:3 he:3 then:2 to:2 by:2 cook:1
+furnace,stove:0.7567575223821351
+food: the:41 and:31 of:28 for:24 in:17 a:9 is:9 that:9 was:9 to:7
+fruit: of:10 and:9 the:9 in:5 a:5 with:3 world:2 is:2 if:2 desserts:2
+food,fruit:0.7635415881999901
+bird: and:10 the:9 a:7 of:5 or:3 was:3 grand:2 stone:2 harbor:2 when:2
+crane: hart:2 of:1 stephen:1 poet:1 and:1 worries:1 george:1 a:1 medical:1 enrage:1
+bird,crane:0.2748746857084641
+tool: the:21 a:11 in:5 to:4 and:4 for:4 this:3 as:3 of:3 machine:3
+implement: to:4 begin:1 his:1 foreign:1 position:1 policy:1 members:1 sought:1 its:1 distinctive:1
+tool,implement:0.2686076546751268
+brother: his:28 and:16 her:12 the:12 of:7 my:7 a:7 was:6 with:5 that:4
+monk: the:9 a:3 then:2 old:2 gillespie:2 davis:2 and:1 jimmy:1 allegretti:1 another:1
+brother,monk:0.3729616044889059
+crane: hart:2 of:1 stephen:1 poet:1 and:1 worries:1 george:1 a:1 medical:1 enrage:1
+implement: to:4 begin:1 his:1 foreign:1 position:1 policy:1 members:1 sought:1 its:1 distinctive:1
+crane,implement:0.040291148201269
+lad: the:2 with:2 a:2 toneless:1 was:1 making:1 always:1 smiling:1 nearly:1 any:1
+brother: his:28 and:16 her:12 the:12 of:7 my:7 a:7 was:6 with:5 that:4
+lad,brother:0.2878669545337651
+journey: the:10 a:7 of:5 to:5 his:4 their:4 in:3 an:3 american:3 was:3
+car: the:159 a:65 in:31 and:27 his:25 of:24 was:24 with:18 to:17 by:13
+journey,car:0.7718527877259871
+monk: the:9 a:3 then:2 old:2 gillespie:2 davis:2 and:1 jimmy:1 allegretti:1 another:1
+oracle: the:2 truth:1 speaks:1 false:1 preordainment:1 over:1 oedipus:1
+monk,oracle:0.4905778905196061
+food: the:41 and:31 of:28 for:24 in:17 a:9 is:9 that:9 was:9 to:7
+rooster: a:3 tormented:1 then:1 it:1 timid:1 dandy:1 is:1 farm:1 crowed:1 and:1
+food,rooster:0.2187184992541651
+coast: the:49 of:16 west:11 gulf:6 and:6 guard:5 to:5 in:5 east:5 from:4
+hill: the:51 on:12 of:12 and:12 a:11 to:10 up:8 capitol:7 from:6 in:6
+coast,hill:0.8743410142949305
+forest: the:38 national:18 of:15 in:12 a:11 system:10 development:5 and:4 or:4 other:4
+graveyard: in:4 the:3 a:2 to:2 be:1 monument:1 at:1 nairobi:1 our:1 front:1
+forest,graveyard:0.5817505779453588
+monk: the:9 a:3 then:2 old:2 gillespie:2 davis:2 and:1 jimmy:1 allegretti:1 another:1
+slave: the:19 a:9 to:8 of:5 property:3 had:3 that:3 was:3 owner:3 he:2
+monk,slave:0.6799903170455591
+coast: the:49 of:16 west:11 gulf:6 and:6 guard:5 to:5 in:5 east:5 from:4
+forest: the:38 national:18 of:15 in:12 a:11 system:10 development:5 and:4 or:4 other:4
+coast,forest:0.7865069673908263
+lad: the:2 with:2 a:2 toneless:1 was:1 making:1 always:1 smiling:1 nearly:1 any:1
+wizard: the:3 of:3 changes:1 who:1 fashioned:1 is:1 a:1 menlo:1
+lad,wizard:0.4099457958749615
+chord: the:4 a:3 and:2 upon:2 struck:2 first:1 judy:1 arch:1 whose:1 is:1
+smile: a:36 the:12 to:8 his:6 her:6 she:5 that:4 i:4 and:4 at:4
+chord,smile:0.5419562505775783
+glass: the:34 a:27 of:26 and:15 in:12 to:8 on:7 is:7 for:4 other:4
+magician: a:3 and:2 had:1 turned:1 was:1 than:1 has:1 to:1 french:1 georges:1
+glass,magician:0.42759637577789
+noon: at:10 and:10 to:7 was:4 by:3 midnight:3 a:2 this:2 there:2 on:2
+string: of:9 a:5 the:4 and:4 his:2 playing:2 about:2 with:2 ran:1 successful:1
+noon,string:0.2816747403312184
+rooster: a:3 tormented:1 then:1 it:1 timid:1 dandy:1 is:1 farm:1 crowed:1 and:1
+voyage: the:10 a:3 this:3 was:3 of:2 as:2 fourth:2 second:2 third:2 i:2
+rooster,voyage:0.15389675281277304
+Correlation:0.14928819881505054
