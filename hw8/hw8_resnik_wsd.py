@@ -16,7 +16,7 @@ def resnik_similarity(probe_word, context_noun, ic) -> Tuple[Optional[Synset], f
     sense: Optional[Synset] = None
     for probe_synset in probe_synsets:
         for context_synset in context_synsets:
-            subsumers = probe_synset.lowest_common_hypernyms(context_synset)
+            subsumers = probe_synset.common_hypernyms(context_synset)
             max_ic = 0.0 if len(subsumers) == 0 else max(information_content(lcs, ic) for lcs in subsumers)
             if max_ic > similarity:
                 similarity = max_ic
