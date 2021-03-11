@@ -56,19 +56,19 @@ def dump_vectors(vectors: List[np.array], senses: List[str], file_path: str) -> 
 
 if __name__ == '__main__':
 
-    # GLOVE_EMBEDDING_FILE, \
-    #     RELATION_TRAIN_DATA_FILE, \
-    #     RELATION_TEST_DATA_FILE, \
-    #     TRAIN_VECTOR_FILE, \
-    #     TEST_VECTOR_FILE, \
-    #     OUTPUT_RESULT_FILE = sys.argv[1:7]
-
     GLOVE_EMBEDDING_FILE, \
         RELATION_TRAIN_DATA_FILE, \
         RELATION_TEST_DATA_FILE, \
         TRAIN_VECTOR_FILE, \
         TEST_VECTOR_FILE, \
-        OUTPUT_RESULT_FILE = 'glove.6B.50d.txt relations_train.json relations_test.json hw9_training_vectors.txt hw9_test_vectors.txt hw9_output.txt'.split()
+        OUTPUT_RESULT_FILE = sys.argv[1:7]
+
+    # GLOVE_EMBEDDING_FILE, \
+    #     RELATION_TRAIN_DATA_FILE, \
+    #     RELATION_TEST_DATA_FILE, \
+    #     TRAIN_VECTOR_FILE, \
+    #     TEST_VECTOR_FILE, \
+    #     OUTPUT_RESULT_FILE = 'glove.6B.50d.txt relations_train.json relations_test.json hw9_training_vectors.txt hw9_test_vectors.txt hw9_output.txt'.split()
 
     print('Loading GloVe embeddings...')
     embeddings = load_glove_embeddings(GLOVE_EMBEDDING_FILE)
